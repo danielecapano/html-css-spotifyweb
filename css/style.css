@@ -1,3 +1,14 @@
+ /* VARIABLE */
+
+ :root {
+     --bg-main: #080B12;
+     --bg-aside: #000000;
+     --bg-player: #282828;
+
+ }
+
+ /* RESET CSS */
+
  * {
      padding: 0;
      margin: 0;
@@ -17,4 +28,31 @@
  a {
      text-decoration: none;
      color: currentColor;
+ }
+
+ /* BASIC STYLE */
+
+ body {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .wrapper {
+     flex-grow: 1;
+     display: flex;
+ }
+
+ aside {
+     flex: 0 0 50px;
+     background-color: var(--bg-aside);
+ }
+
+ main {
+     flex-grow: 1;
+     background-color: var(--bg-main);
+ }
+
+ .player-bar {
+     background-color: var(--bg-player);
  }
