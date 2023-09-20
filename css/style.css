@@ -82,6 +82,7 @@
  }
 
  aside {
+     overflow: hidden;
      flex: 0 0 50px;
      background-color: var(--bg-aside);
      color: var(--white);
@@ -92,16 +93,22 @@
      background-color: var(--bg-main);
  }
 
+ .main-content {
+     overflow: auto;
+ }
+
  .player-bar {
+     position: relative;
+     z-index: 1;
      overflow: hidden;
      background-color: var(--bg-player);
      color: var(--white);
      padding: 12px 10px;
      display: flex;
+     flex-shrink: 0;
      align-items: center;
      justify-content: space-between;
  }
-
 
  /* PLAYER BAR */
 
@@ -200,6 +207,7 @@
  }
 
  .timing-now {
+     position: relative;
      left: 0;
      top: 0;
      height: 100%;
@@ -211,7 +219,6 @@
 
  .dot {
      display: none;
-     content: '';
      position: absolute;
      left: 20%;
      top: 50%;
@@ -222,11 +229,11 @@
      background-color: var(--white);
  }
 
- .timing:hover .timing-now {
+ .timing-bar:hover .timing-now {
      background-color: var(--yellow);
  }
 
- .timing:hover .dot {
+ .timing-bar:hover .dot {
      display: block;
  }
 
@@ -415,6 +422,37 @@
      object-fit: contain;
      background-color: var(--white-50);
      border-radius: 50%;
+ }
+
+ /* MAIN */
+
+ /* UPGRADE BAR */
+
+ .upgrade-bar {
+     padding: 20px 20px 30px;
+     position: sticky;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     text-align: right;
+ }
+
+ .button {
+     display: inline-block;
+     background-color: transparent;
+     color: var(--white);
+     line-height: 40px;
+     border: 1px solid var(--white);
+     text-transform: uppercase;
+     border-radius: 999px;
+     font-size: 13px;
+     font-weight: 700;
+     padding: 0 40px;
+ }
+
+ .button:hover {
+     transform: scale(1.05);
  }
 
 
