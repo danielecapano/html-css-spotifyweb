@@ -69,6 +69,7 @@
  /* BASIC STYLE */
 
  body {
+     overflow: hidden;
      height: 100vh;
      display: flex;
      flex-direction: column;
@@ -92,6 +93,7 @@
  }
 
  .player-bar {
+     overflow: hidden;
      background-color: var(--bg-player);
      color: var(--white);
      padding: 12px 10px;
@@ -277,7 +279,7 @@
  }
 
  .side-menu-item.active,
- .side-menu-item:hover {
+ aside a:hover {
      color: var(--white);
  }
 
@@ -327,6 +329,49 @@
 
  .playlist {
      display: none;
+     color: var(--white-50);
+ }
+
+ .playlist-title {
+     font-weight: 700;
+     font-size: 14px;
+     color: var(--white);
+     text-transform: uppercase;
+     margin-bottom: 10px;
+ }
+
+ .playlist-create {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     font-weight: 700;
+     margin-bottom: 20px;
+ }
+
+ .playlist-create:hover .plus {
+     background-color: var(--white);
+ }
+
+ .plus {
+     width: 36px;
+     aspect-ratio: 1;
+     text-align: center;
+     background-color: var(--light-grey);
+     color: black;
+ }
+
+ .plus i {
+     display: inline-block;
+     font-size: 20px;
+     line-height: 36px;
+ }
+
+ .my-playlist {
+     display: flex;
+     flex-direction: column;
+     gap: 18px;
+     font-size: 14px;
+     font-weight: 400;
  }
 
  .user-group {
@@ -334,17 +379,33 @@
      flex-direction: column;
      align-items: center;
      margin-top: auto;
+     width: 100%;
  }
 
  .download {
-     display: inline-block;
-     line-height: 12px;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     font-size: 14px;
+     font-weight: 700;
+     color: var(--white-50);
+
+     padding-bottom: 8px;
+
+ }
+
+ .download img {
      width: 12px;
-     margin-bottom: 8px;
  }
 
  .user {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 8px;
      margin-top: 8px;
+     width: 100%;
+     font-size: 15px;
  }
 
  .user img {
@@ -388,7 +449,16 @@
      }
 
      .description {
-         display: inline-block;
+         display: block;
+     }
+
+     .download {
+         width: 100%;
+         border-bottom: 1px solid var(--white-50);
+     }
+
+     .playlist {
+         display: block;
      }
 
 
