@@ -13,11 +13,76 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
+
     <div class="wrapper">
-      <aside></aside>
+        
+      <!-- START ASIDE -->
+
+      <aside>
+
+        <figure class="logo">
+            <img class="logo-big" src="./img/logo.svg" alt="Logo">
+            <img class="logo-small" src="./img/logo-small.svg" alt="Logo Small">
+        </figure>
+
+        <ul class="side-menu">
+            <li class="side-menu-item active">
+                <a href="#" class="side-menu-link">
+                    <img src="./img/home.svg" alt="Home"><span class="description">Home</span>
+                </a>
+            </li>
+            <li class="side-menu-item">
+                <a href="#" class="side-menu-link">
+                    <img src="./img/search.svg" alt="Search"><span class="description">Cerca</span>
+                </a>
+            </li>
+            <li class="side-menu-item">
+                <a href="#" class="side-menu-link">
+                    <img src="./img/libreria.svg" alt="Libreria"><span class="description">La tua libreria</span>
+                </a>
+            </li>
+        </ul>
+
+        <section class="playlist">
+            <h3 class="playlist-title">Playlist</h3>
+            <a href="#" class="playlist-create">
+                <i class="fa-solid fa-plus"></i>Crea Playlist
+            </a>
+
+            <ul class="my-playlist">
+                <li class="my-playlist-item"><a href="#" class="my-playlist-name">Nome Playlist</a></li>
+                <li class="my-playlist-item"><a href="#" class="my-playlist-name">Nome Playlist</a></li>
+                <li class="my-playlist-item"><a href="#" class="my-playlist-name">Nome Playlist</a></li>
+                <li class="my-playlist-item"><a href="#" class="my-playlist-name">Nome Playlist</a></li>
+                <li class="my-playlist-item"><a href="#" class="my-playlist-name">Nome Playlist</a></li>
+                <li class="my-playlist-item"><a href="#" class="my-playlist-name">Nome Playlist</a></li>
+                <li class="my-playlist-item"><a href="#" class="my-playlist-name">Nome Playlist</a></li>
+            </ul>
+        </section>
+
+        <div class="user-group">
+            <a href="#" class="download">
+                <img src="./img/download.svg" alt="Download">
+                <span class="description download-text">Installa app</span>
+            </a>
+            <a href="#" class="user">
+                <img src="./img/profile.svg" alt="Profile">
+                <span class="description profile-text">John Doe</span>
+            </a>
+        </div>
+
+
+      </aside>
+
+      <!-- END ASIDE -->
+
       <main></main>
     </div>
+
+    <!-- START PLAYER-BAR -->
+
     <div class="player-bar">
       <div class="album">
         <figure class="album-cover">
@@ -35,7 +100,6 @@
         </div>
       </div>
 
-      <!-- <div class="prova"></div> -->
 
       <div class="controller">
         <ul class="icons-list">
@@ -76,5 +140,8 @@
         </li>
       </ul>
     </div>
+
+    <!-- END PLAYER BAR -->
+
   </body>
 </html>
