@@ -89,15 +89,31 @@
  }
 
  main {
-     overflow: auto;
+    position: relative;
+     overflow: hidden;
      flex-grow: 1;
      background-color: var(--bg-main);
  }
 
- .main-content {
-
-     color: var(--white);
+ .upgrade-bar {
+     z-index: 10;
+     padding: 20px 20px 30px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     text-align: right;
  }
+
+ .main-content {
+     padding: 110px 24px 24px;
+     overflow: auto;
+     color: var(--white);
+     height: 100%;
+ }
+
+
 
  .player-bar {
      position: relative;
@@ -430,16 +446,7 @@
 
  /* UPGRADE BAR */
 
- .upgrade-bar {
-     z-index: 10;
-     padding: 20px 20px 30px;
-     position: sticky;
-     top: 0;
-     left: 0;
-     width: 100%;
-     background-color: rgba(0, 0, 0, 0.5);
-     text-align: right;
- }
+
 
  .button {
      display: inline-block;
@@ -459,10 +466,6 @@
  }
 
  /* MAIN MENU */
-
- .main-content {
-     padding: 24px;
- }
 
  .main-menu-list {
      display: flex;
