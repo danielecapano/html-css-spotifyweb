@@ -483,11 +483,12 @@
      position: relative;
  }
 
- .main-menu-link:hover {
+ .main-menu-link:hover,
+ .main-menu-link.active {
      color: var(--white);
  }
 
- .main-menu-link:hover::after {
+ .main-menu-link.active::after {
      position: absolute;
      content: '';
      bottom: 0;
