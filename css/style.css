@@ -77,13 +77,12 @@
  }
 
  .wrapper {
-     overflow: auto;
+     overflow: hidden;
      flex-grow: 1;
      display: flex;
  }
 
  aside {
-     overflow: hidden;
      flex: 0 0 50px;
      background-color: var(--bg-aside);
      color: var(--white);
@@ -98,7 +97,6 @@
  .main-content {
 
      color: var(--white);
-     overflow: auto;
  }
 
  .player-bar {
